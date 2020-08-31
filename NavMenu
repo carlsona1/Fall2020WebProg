@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alex's CSS Drop Down Menu</title>
+    <style>
+        body {
+        	background-color: DarkGreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+
+        }
+
+        a {
+
+            color: Cornsilk;
+
+            font-weight: bold;
+
+            text-decoration: none;
+
+       }
+
+        .body {
+
+        	background-color: DarkKhaki;
+
+        	border-radius: 10px;
+
+            border: 3px outset DarkGoldenRod;
+
+            margin: 30px;
+
+            padding: 30px;
+
+        }
+
+
+        .navmenu {
+
+        	background-color: DarkOliveGreen;
+
+            color: Cornsilk;
+
+            font-weight: bold;
+
+            width: 100%;
+
+        }
+
+        
+
+        .navmenu > div, li {
+
+        
+
+        	border-right: 3px double DarkKhaki;
+
+            display: inline-block;
+
+            padding: 5px 10px;
+
+            position: relative;
+
+            width: 190px;
+
+            text-align: center;
+
+        }
+
+        .navmenu ul {
+
+        	background-color:  DarkOliveGreen;
+
+            display: none;
+
+            list-style-type: none;
+
+            padding: 0;
+
+            position: absolute;
+
+            left: 0px;
+
+            top: 12px;
+
+            
+
+        }
+
+        li a:hover {
+  			background-color: Black;
+		}
+		.button:hover{
+        background-color: Black;
+        }
+
+        .navmenu > div:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navmenu">
+        <div class = "button">
+            Links
+            <ul>
+                <li><a href="https://www.w3schools.com/" target ="_blank">W3Schools</a></li>
+                <li><a href="https://www.newpaltz.edu/" target ="_blank">SUNY New Paltz</a></li>
+                <li><a href="https://github.com/" target ="_blank">GitHub</a></li>
+                <li><a href="https://www.reddit.com/" target ="_blank">Reddit</a></li>
+                <li><a href="https://www.pinkbike.com/" target ="_blank">PinkBike</a></li>
+            </ul>
+        </div>
+        <div class = "button">
+            Interests
+            <ul>
+                <li><a href="">Programming</a></li>
+               <li><a href="">Web Development</a></li>
+               <li><a href="">Mobile Development</a></li>
+               <li><a href="">Software Engineering</a></li>
+                <li><hr ></li>
+                 <li><a href="">Playing Music</a></li>
+                 <li><a href="">Music Production</a></li>
+                <li><a href="">Mountain Biking</a></li>
+                <li><a href="">Photography</a></li>
+                <li><a href="">Graphic Design</a></li>
+                 <li><hr ></li>
+                 <li><a href="">Philosophy</a></li>
+                 <li><a href="">Self-Improvement</a></li>
+                 <li><a href="">Community</a></li>
+                 <li><a href="">Environmental Impact</a></li>
+            </ul>
+        </div>
+        <div class = "button">
+            About
+            <ul>
+                <li><a href="">More Information</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <h1>Welcome!</h1>
+        <h2>Please use the navigation menu to make a selection.</h2>
+        <p>
+        </p>
+    </div>    
+</body>
+</html>
