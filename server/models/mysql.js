@@ -1,9 +1,7 @@
-/* B"H
+/*
     The file for providing the connections and mySql functionality to the rest of the project
 */
-
 const mysql = require("mysql");
-require('dotenv').config();
 
 const pool = mysql.createPool({
     connectionLimit: 10, // default 10
