@@ -10,6 +10,10 @@ async function getAll(){
     return await mysql.query(`SELECT * FROM Users`);
 }
 
+async function get(id){
+    return await mysql.query(`SELECT * FROM Types WHERE id=?`, [id]);
+}
+
 async function getTypes(){
     return await mysql.query(`SELECT id,Name FROM Types WHERE Type_id = 2`);
 }
@@ -18,5 +22,6 @@ async function add(name, age){
     data.push({name, age});
 }
 
+const search = async q => await mysql.query(`SELECT id, firstName, lastName FROM Users WHERE LastName LIKE '%${q}% ' OR FirstName LIKE '%${q}%' `);
 
-module.exports = { getTypes, getAll, add, search: async q => data.filter(x=> x.name == q) }
+module.exports = { get, getAll, getTypes, add, search, }
