@@ -1,7 +1,7 @@
 <template>
-  <nav class="panel">
+<nav class="panel">
   <p class="panel-heading">
-    Repositories
+    Side Bar
   </p>
   <div class="panel-block">
     <p class="control has-icons-left">
@@ -68,10 +68,8 @@
 
 <script>
 export default {
-
 }
 </script>
 
 <style>
-
 </style>
